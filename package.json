@@ -19,6 +19,8 @@
     "eslint-plugin-n": "^16.6.2",
     "eslint-plugin-promise": "^6.6.0",
     "eslint-plugin-simple-import-sort": "^12.1.1",
+    "stylelint": "^14.16.1",
+    "stylelint-order": "^6.0.4",
     "typescript": "^5.5.4"
   }
 }

@@ -1,0 +1,119 @@
+body {
+  background-color: var(--gray);
+  font-family: Satoshi Regular , serif;
+  min-height: 100vh;
+}
+
+.header {
+  background-color: white;
+}
+
+.header > span {
+  align-items: center;
+  background-color: black;
+  color: white;
+  display: flex;
+  height: 38px;
+  justify-content: center;
+  width: 100%;
+}
+
+.underline:hover {
+  cursor: pointer;
+}
+
+.nav-bar {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  height: 95px;
+  justify-content: space-evenly;
+  margin: auto;
+  width: 85%;
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style-type: none;
+  width: 25%;
+}
+
+.nav-title {
+  font-family: Integral CF Bold , Arial , sans-serif;
+}
+
+.nav-list > li {
+  white-space: nowrap;
+}
+
+.nav-list > li:hover {
+  cursor: pointer;
+}
+
+.select {
+  background-color: inherit;
+  font-family: Satoshi , serif;
+  font-size: 16px;
+}
+
+.select:focus {
+  outline: none;
+}
+
+.search-input {
+  background-color: var(--light-gray);
+  background-image: url('./assets/search-icon.svg');
+  background-position: 3%;
+  background-repeat: no-repeat;
+  border: 0;
+  border-radius: 50px;
+  font-size: 16px;
+  height: 50%;
+  padding-left: 45px;
+  width: 40%;
+}
+
+.search-input:focus {
+  outline: none;
+}
+
+.search-input::placeholder {
+  font-family: Satoshi Regular , serif;
+}
+
+.buttons-section {
+  display: flex;
+  justify-content: space-between;
+  width: 60px;
+}
+
+.main {
+  width: 100%;
+}
+
+.models-section {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.models-title {
+  font-family: Integral CF Bold , Arial , sans-serif;
+  font-size: 64px;
+  height: 173px;
+  left: 0;
+  margin-left: 80px;
+  margin-top: 100px;
+  position: absolute;
+  width: 577px;
+}
+
+.light-icon-1 {
+  height: 104px;
+  margin-right: 80px;
+  margin-top: 80px;
+  position: absolute;
+  width: 104px;
+}
+
