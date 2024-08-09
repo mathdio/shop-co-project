@@ -1,3 +1,1 @@
-alert("LINKADO")
-
-alert("SERÁ QUE VAI?????")
+alert('Teste');

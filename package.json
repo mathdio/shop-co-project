@@ -6,11 +6,19 @@
   "scripts": {
     "build": "npx tsc",
     "dev": "npx tsc -w",
+    "lint": "eslint -c .eslintrc.json . --ext .js,.jsx,.ts,.tsx",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {
+  "devDependencies": {
+    "@trybe/eslint-config-frontend": "^1.11.4",
+    "eslint": "^8.57.0",
+    "eslint-config-standard-with-typescript": "^43.0.1",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-n": "^16.6.2",
+    "eslint-plugin-promise": "^6.6.0",
+    "eslint-plugin-simple-import-sort": "^12.1.1",
     "typescript": "^5.5.4"
   }
 }
