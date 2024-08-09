@@ -80,7 +80,9 @@ body {
 }
 
 .search-input::placeholder {
+  color: black;
   font-family: Satoshi Regular , serif;
+  opacity: 40%;
 }
 
 .buttons-section {
@@ -107,6 +109,17 @@ body {
   margin-top: 100px;
   position: absolute;
   width: 577px;
+}
+
+.models-text {
+  font-family: Satoshi Regular , serif;
+  height: 33px;
+  left: 0;
+  margin-left: 80px;
+  margin-top: 350px;
+  opacity: 60%;
+  position: absolute;
+  width: 545px;
 }
 
 .light-icon-1 {
