@@ -20,3 +20,13 @@
   font-family: Satoshi Regular;
   src: url('./assets/satoshi-regular.otf');
 }
+
+@font-face {
+  font-family: Satoshi Medium;
+  src: url('./assets/satoshi-medium.otf');
+}
+
+@font-face {
+  font-family: Satoshi Bold;
+  src: url('./assets//satoshi-bold.otf');
+}

@@ -1,11 +1,16 @@
 body {
   background-color: var(--gray);
   font-family: Satoshi Regular , serif;
-  min-height: 100vh;
+
+  /* height: 100vh; */
+  width: 100%;
 }
 
 .header {
   background-color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 .header > span {
@@ -15,6 +20,7 @@ body {
   display: flex;
   height: 38px;
   justify-content: center;
+  margin: auto;
   width: 100%;
 }
 
@@ -68,7 +74,7 @@ body {
   background-position: 3%;
   background-repeat: no-repeat;
   border: 0;
-  border-radius: 50px;
+  border-radius: 62px;
   font-size: 16px;
   height: 50%;
   padding-left: 45px;
@@ -92,41 +98,98 @@ body {
 }
 
 .main {
+  margin-top: 133px;
   width: 100%;
 }
 
 .models-section {
+  border: 1px solid red;
   display: flex;
+  height: 663px;
   justify-content: flex-end;
+  width: 100%;
+}
+
+.section-texts {
+  border: 1px solid blue;
+  left: 0;
+  position: absolute;
+  width: 50%;
 }
 
 .models-title {
   font-family: Integral CF Bold , Arial , sans-serif;
   font-size: 64px;
-  height: 173px;
-  left: 0;
-  margin-left: 80px;
+  height: 192px;
+  line-height: 64px;
+  margin-left: 15%;
   margin-top: 100px;
-  position: absolute;
   width: 577px;
 }
 
 .models-text {
   font-family: Satoshi Regular , serif;
   height: 33px;
-  left: 0;
-  margin-left: 80px;
-  margin-top: 350px;
+  margin-left: 15%;
+  margin-top: 30px;
   opacity: 60%;
-  position: absolute;
   width: 545px;
 }
 
-.light-icon-1 {
+.models-button {
+  background-color: black;
+  border-radius: 62px;
+  color: white;
+  font-family: Satoshi Medium , Times , serif;
+  height: 52px;
+  margin-left: 15%;
+  margin-top: 30px;
+  width: 210px;
+}
+
+.marks-section {
+  border: green 1px solid;
+  display: flex;
+  height: 74px;
+  justify-content: space-evenly;
+  margin-left: 15%;
+  width: 596;
+
+  /* margin-top: 30px; */
+}
+
+.marks-section > hr {
+  border:  1px solid black;
+  height: 100%;
+  opacity: 0.6;
+}
+
+.mark-container > h1 {
+  font-family: Satoshi Bold , Times , serif;
+  font-size: 40px;
+}
+
+.mark-container > p {
+  font-size: 16px;
+  opacity: 60%;
+}
+
+.models-img {
+  right: 0;
+}
+
+/* .light-icon-1 {
   height: 104px;
-  margin-right: 80px;
+  margin-right: 8%;
   margin-top: 80px;
   position: absolute;
   width: 104px;
 }
 
+.light-icon-2 {
+  height: 56px;
+  margin-right: 50%;
+  margin-top: 80px;
+  position: absolute;
+  width: 104px;
+} */
