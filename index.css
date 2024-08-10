@@ -1,5 +1,5 @@
 body {
-  background-color: var(--gray);
+  background-color: white;
   font-family: Satoshi Regular , serif;
 
   /* height: 100vh; */
@@ -103,6 +103,7 @@ body {
 }
 
 .models-section {
+  background-color: var(--gray);
   display: flex;
   height: 663px;
   justify-content: flex-end;
@@ -197,4 +198,75 @@ body {
   margin-top: 300px;
   position: absolute;
   width: 104px;
+}
+
+.groups-section {
+  align-items: center;
+  background-color: black;
+  display: flex;
+  height: 122px;
+  justify-content: space-evenly;
+}
+
+.arrival-container > img {
+  display: block;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.groups-section > img:hover {
+  cursor: pointer;
+}
+
+
+.arrivals-section {
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 75px;
+  width: 100%;
+}
+
+.arrivals-section > h1 {
+  font-family: Integral CF Bold , Arial , sans-serif;
+  font-size: 48px;
+  min-width: 100%;
+  text-align: center;
+}
+
+.arrival-container {
+  font-family: Satoshi Bold , Times , serif;
+  height: 395px;
+  margin-left: 1%;
+  margin-right: 1%;
+  margin-top: 50px;
+  width: 295px;
+}
+
+
+.arrival-container > p {
+  font-size: 20px;
+  margin-top: 5px;
+}
+
+.arrival-container > h1 {
+  display: inline;
+  font-size: 24px;
+  margin-right: 5px;
+}
+
+.arrival-container del {
+  opacity: 40%;
+}
+
+.arrival-price {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  height: 32px;
+}
+
+.arrival-price > h1 {
+  margin-right: 10px;
 }
