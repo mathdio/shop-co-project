@@ -103,7 +103,6 @@ body {
 }
 
 .models-section {
-  border: 1px solid red;
   display: flex;
   height: 663px;
   justify-content: flex-end;
@@ -111,7 +110,6 @@ body {
 }
 
 .section-texts {
-  border: 1px solid blue;
   left: 0;
   position: absolute;
   width: 50%;
@@ -141,27 +139,33 @@ body {
   border-radius: 62px;
   color: white;
   font-family: Satoshi Medium , Times , serif;
+  font-size: 16px;
   height: 52px;
   margin-left: 15%;
   margin-top: 30px;
   width: 210px;
 }
 
+.models-button:hover {
+  cursor: pointer;
+}
+
 .marks-section {
-  border: green 1px solid;
   display: flex;
   height: 74px;
   justify-content: space-evenly;
   margin-left: 15%;
+  margin-top: 30px;
   width: 596;
-
-  /* margin-top: 30px; */
 }
 
 .marks-section > hr {
-  border:  1px solid black;
+  background-color: black;
   height: 100%;
-  opacity: 0.6;
+  margin-left: 2%;
+  margin-right: 2%;
+  opacity: 10%;
+  width: 2px;
 }
 
 .mark-container > h1 {
@@ -175,10 +179,11 @@ body {
 }
 
 .models-img {
+  margin-right: 5%;
   right: 0;
 }
 
-/* .light-icon-1 {
+.light-icon-1 {
   height: 104px;
   margin-right: 8%;
   margin-top: 80px;
@@ -188,8 +193,8 @@ body {
 
 .light-icon-2 {
   height: 56px;
-  margin-right: 50%;
-  margin-top: 80px;
+  margin-right: 40%;
+  margin-top: 300px;
   position: absolute;
   width: 104px;
-} */
+}
