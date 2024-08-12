@@ -228,12 +228,16 @@ main > hr {
 
 .dress-style-section img {
   margin: 10px;
+
+  /* transform: scale(1);
+  transition: all 0.2s ease-in-out */
 }
 
 .dress-style-section img:hover {
   cursor: pointer;
-  transform: scale(1.035);
-  transition: all 0.2s ease-in-out;
+
+  /* transform: scale(0.8);
+  transition: all 0.2s ease-in-out; */
 }
 
 .groups-section > img:hover {
@@ -332,7 +336,7 @@ main > hr {
   justify-content: space-evenly;
   margin: auto;
   margin-top: 100px;
-  width: 90%;
+  width: 85%;
 }
 
 .dress-style-section > h1 {
@@ -346,3 +350,17 @@ main > hr {
   justify-content: center;
 }
 
+.original-size {
+  transform: scale(1);
+  transition: all 0.2s ease-in-out;
+}
+
+.grow {
+  transform: scale(1.055);
+  transition: all 0.2s ease-in-out;
+}
+
+.shrink {
+  transform: scale(0.925);
+  transition: all 0.2s ease-in-out;
+}
