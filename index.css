@@ -226,6 +226,20 @@ main > hr {
   margin-top: 5px;
 }
 
+.dress-style-section img {
+  margin: 10px;
+
+  /* transform: scale(1);
+  transition: all 0.2s ease-in-out */
+}
+
+.dress-style-section img:hover {
+  cursor: pointer;
+
+  /* transform: scale(0.8);
+  transition: all 0.2s ease-in-out; */
+}
+
 .groups-section > img:hover {
   cursor: pointer;
 }
@@ -240,7 +254,7 @@ main > hr {
   width: 100%;
 }
 
-.arrivals-section > h1, .selling-section > h1 {
+.arrivals-section > h1, .selling-section > h1, .dress-style-section > h1 {
   font-family: Integral CF Bold , Arial , sans-serif;
   font-size: 48px;
   min-width: 100%;
@@ -251,7 +265,7 @@ main > hr {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: 100%;
+  width: 90%;
 }
 
 .arrival-card, .selling-card {
@@ -312,3 +326,41 @@ main > hr {
   cursor: pointer;
 }
 
+.dress-style-section {
+  align-items: center;
+  background-color: var(--light-gray);
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  height: 866px;
+  justify-content: space-evenly;
+  margin: auto;
+  margin-top: 100px;
+  width: 85%;
+}
+
+.dress-style-section > h1 {
+  padding-bottom: 25px;
+  padding-top: 50px;
+}
+
+.styles-imgs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.original-size {
+  transform: scale(1);
+  transition: all 0.2s ease-in-out;
+}
+
+.grow {
+  transform: scale(1.055);
+  transition: all 0.2s ease-in-out;
+}
+
+.shrink {
+  transform: scale(0.925);
+  transition: all 0.2s ease-in-out;
+}
