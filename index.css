@@ -265,7 +265,7 @@ main > hr {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: 100%;
+  width: 90%;
 }
 
 .arrival-card, .selling-card {
