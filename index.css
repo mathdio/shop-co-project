@@ -228,16 +228,15 @@ main > hr {
 
 .dress-style-section img {
   margin: 10px;
+}
 
-  /* transform: scale(1);
-  transition: all 0.2s ease-in-out */
+.reviews-container > img {
+  margin: 0 5px;
 }
 
 .dress-style-section img:hover {
   cursor: pointer;
 
-  /* transform: scale(0.8);
-  transition: all 0.2s ease-in-out; */
 }
 
 .groups-section > img:hover {
@@ -360,14 +359,7 @@ main > hr {
   transition: all 0.2s ease-in-out;
 }
 
-.shrink {
-  transform: scale(0.925);
-  transition: all 0.2s ease-in-out;
-}
-
 .reviews-section {
-
-  /* border: 1px red solid; */
   display: flex;
   flex-direction: column;
   margin: auto;
@@ -381,9 +373,15 @@ main > hr {
 }
 
 .reviews-button-right, .reviews-button-left {
-  border: 4px solid red;
+  margin-right: 7.5%;
+  margin-top: 25px;
   position: absolute;
   right: 0;
+  width: 24px;
+}
+
+.reviews-button-left {
+  margin-right: 9.5%;
 }
 
 .reviews-container {
@@ -409,9 +407,6 @@ main > hr {
   }
 }
 
-.reviews-container > img {
-  margin: 0 5px;
-}
 
 .reviews-container > img:hover {
   background-color: var(--light-gray);

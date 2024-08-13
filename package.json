@@ -7,6 +7,7 @@
     "build": "npx tsc",
     "dev": "npx tsc -w",
     "lint": "eslint -c .eslintrc.json . --ext .js,.jsx,.ts,.tsx",
+    "lint:styles": "stylelint **/**/*.css --config .stylelintrc.json --ignore-disables --allow-empty-input",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -20,7 +21,6 @@
     "eslint-plugin-promise": "^6.6.0",
     "eslint-plugin-simple-import-sort": "^12.1.1",
     "stylelint": "^14.16.1",
-    "stylelint-order": "^6.0.4",
-    "typescript": "^5.5.4"
+    "stylelint-order": "^6.0.4"
   }
 }
