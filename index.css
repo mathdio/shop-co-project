@@ -366,7 +366,8 @@ main > hr {
 }
 
 .reviews-section {
-  border: 1px red solid;
+
+  /* border: 1px red solid; */
   display: flex;
   flex-direction: column;
   margin: auto;
@@ -386,12 +387,41 @@ main > hr {
 }
 
 .reviews-container {
-  border: blue 1px solid;
+  animation: bannermove 10s linear infinite alternate;
   display: flex;
   height: 240px;
   margin-top: 50px;
+  width: fit-content;
+}
+
+.reviews-container:hover {
+  animation-play-state: paused;
+}
+
+@keyframes bannermove {
+
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-32%);
+  }
 }
 
 .reviews-container > img {
   margin: 0 5px;
+}
+
+.reviews-container > img:hover {
+  background-color: var(--light-gray);
+  border: black 1px solid;
+  border-radius: 20px;
+
+}
+
+
+.reviews-div {
+  display: flex;
+  flex-direction: row;
 }
