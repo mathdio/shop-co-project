@@ -1,8 +1,6 @@
 body {
   background-color: white;
   font-family: Satoshi Regular , serif;
-
-  /* height: 100vh; */
   width: 100%;
 }
 
@@ -360,10 +358,13 @@ main > hr {
 }
 
 .reviews-section {
+
+  /* border: red solid 1px; */
   display: flex;
   flex-direction: column;
   margin: auto;
   margin-top: 100px;
+  padding-bottom: 200px;
   width: 85%;
 }
 
@@ -419,4 +420,80 @@ main > hr {
 .reviews-div {
   display: flex;
   flex-direction: row;
+}
+
+.newsletter-section {
+  align-items: center;
+  background-color: black;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  font-family: Integral CF Bold , Arial , sans-serif;
+  height: 180px;
+  justify-content: space-around;
+  left: 0;
+  margin: auto;
+  margin-top: -90px;
+  position: absolute;
+  right: 0;
+  width: 85%;
+  z-index: 1;
+
+}
+
+.newsletter-section h1 {
+  color: white;
+  font-size: 40px;
+  height: 94px;
+  width: 550px;
+}
+
+.newsletter-form {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  width: 350px;
+}
+
+.newsletter-input, .newsletter-button {
+  background-color: white;
+  border-radius: 62px;
+  color: black;
+  font-size: 16px;
+  height: 48px;
+  margin: 5px;
+  max-width: 100%;
+}
+
+.newsletter-input {
+  background-image: url('./assets/mail-icon.svg');
+  background-position: 5%;
+  background-repeat: no-repeat;
+  padding-left: 45px;
+}
+
+.newsletter-input:focus {
+  outline: none;
+}
+
+.newsletter-input::placeholder {
+  color: black;
+  font-family: Satoshi Regular , Times , serif;
+  opacity: 40%;
+}
+
+.newsletter-button {
+  font-family: Satoshi Medium , Times , serif;
+}
+
+.newsletter-button:hover {
+  cursor: pointer;
+}
+
+footer {
+  background-color: var(--light-gray);
+  height: 500px;
+  position: relative;
+  width: 100%;
 }
