@@ -228,16 +228,15 @@ main > hr {
 
 .dress-style-section img {
   margin: 10px;
+}
 
-  /* transform: scale(1);
-  transition: all 0.2s ease-in-out */
+.reviews-container > img {
+  margin: 0 5px;
 }
 
 .dress-style-section img:hover {
   cursor: pointer;
 
-  /* transform: scale(0.8);
-  transition: all 0.2s ease-in-out; */
 }
 
 .groups-section > img:hover {
@@ -360,7 +359,64 @@ main > hr {
   transition: all 0.2s ease-in-out;
 }
 
-.shrink {
-  transform: scale(0.925);
-  transition: all 0.2s ease-in-out;
+.reviews-section {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin-top: 100px;
+  width: 85%;
+}
+
+.reviews-title {
+  font-family: Integral CF Bold , Arial , sans-serif;
+  font-size: 48px;
+}
+
+.reviews-button-right, .reviews-button-left {
+  margin-right: 7.5%;
+  margin-top: 25px;
+  position: absolute;
+  right: 0;
+  width: 24px;
+}
+
+.reviews-button-left {
+  margin-right: 9.5%;
+}
+
+.reviews-container {
+  animation: bannermove 10s linear infinite alternate;
+  display: flex;
+  height: 240px;
+  margin-top: 50px;
+  width: fit-content;
+}
+
+.reviews-container:hover {
+  animation-play-state: paused;
+}
+
+@keyframes bannermove {
+
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-32%);
+  }
+}
+
+
+.reviews-container > img:hover {
+  background-color: var(--light-gray);
+  border: black 1px solid;
+  border-radius: 20px;
+
+}
+
+
+.reviews-div {
+  display: flex;
+  flex-direction: row;
 }
