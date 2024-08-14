@@ -1,6 +1,5 @@
 body {
   background-color: white;
-  border: 1px red solid;
   font-family: Satoshi Regular , serif;
   margin: auto;
   overflow-x: hidden;
@@ -106,17 +105,36 @@ body {
 
 .models-section {
   background-color: var(--gray);
+  border: 1px red solid;
   display: flex;
+  flex-direction: row;
   height: 663px;
-  justify-content: flex-end;
-  width: 100%;
-  z-index: 0;
+  justify-content: space-between;
 }
 
-.section-texts {
-  left: 0;
+.models-img {
+  height: 630px;
+  margin-right: 5%;
+  margin-top: 33px;
+}
+
+.light-icon-1 {
+  float: right;
+  height: 104px;
+  margin-right: 180px;
+  margin-top: 80px;
   position: absolute;
-  width: 50%;
+  right: 0;
+  width: 104px;
+}
+
+.light-icon-2 {
+  height: 56px;
+  margin-right: 750px;
+  margin-top: 300px;
+  position: absolute;
+  right: 0;
+  width: 104px;
 }
 
 .models-title {
@@ -199,27 +217,6 @@ footer > hr {
 .mark-container > p {
   font-size: 16px;
   opacity: 60%;
-}
-
-.models-img {
-  margin-right: 5%;
-  right: 0;
-}
-
-.light-icon-1 {
-  height: 104px;
-  margin-right: 8%;
-  margin-top: 80px;
-  position: absolute;
-  width: 104px;
-}
-
-.light-icon-2 {
-  height: 56px;
-  margin-right: 40%;
-  margin-top: 300px;
-  position: absolute;
-  width: 104px;
 }
 
 .groups-section {
