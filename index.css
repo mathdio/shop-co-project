@@ -174,7 +174,7 @@ main > hr {
 footer > hr {
   background-color: black;
   height: 1px;
-  margin-bottom: 50px;
+  margin-bottom: 15px;
   margin-top: 50px;
   opacity: 10%;
   width: 85%;
@@ -524,7 +524,6 @@ footer {
   width: 85%;
 }
 
-
 .socials-section > h1 {
   font-family: Integral CF Bold , Arial , sans-serif;
   font-size: 33px;
@@ -549,6 +548,9 @@ footer {
   flex-direction: row;
 }
 
+.socials-container > img:hover {
+  cursor: pointer;
+}
 
 .utils-section > dl {
   display: flex;
@@ -566,5 +568,27 @@ footer {
   font-family: Satoshi Regular , Times , serif;
   font-size: 16px;
   opacity: 60%;
+  width: fit-content;
 }
 
+.utils-section dd:hover {
+  cursor: pointer;
+}
+
+.signature-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 85%;
+}
+
+.signature-section > p {
+  font-family: Satoshi Regular , Times , serif;
+  font-size: 14px;
+  margin-top: 10px;
+  opacity: 60%;
+}
+
+.signature-section img:hover {
+  cursor: pointer;
+}
