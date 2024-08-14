@@ -1,8 +1,7 @@
 body {
   background-color: white;
   font-family: Satoshi Regular , serif;
-
-  /* height: 100vh; */
+  overflow-x: hidden;
   width: 100%;
 }
 
@@ -172,6 +171,15 @@ main > hr {
   width: 90%;
 }
 
+footer > hr {
+  background-color: black;
+  height: 1px;
+  margin-bottom: 15px;
+  margin-top: 50px;
+  opacity: 10%;
+  width: 85%;
+}
+
 .marks-section > hr {
   background-color: black;
   height: 100%;
@@ -232,6 +240,10 @@ main > hr {
 
 .reviews-container > img {
   margin: 0 5px;
+}
+
+.socials-container > img {
+  margin-right: 10px;
 }
 
 .dress-style-section img:hover {
@@ -364,6 +376,7 @@ main > hr {
   flex-direction: column;
   margin: auto;
   margin-top: 100px;
+  padding-bottom: 200px;
   width: 85%;
 }
 
@@ -419,4 +432,163 @@ main > hr {
 .reviews-div {
   display: flex;
   flex-direction: row;
+}
+
+.newsletter-section {
+  align-items: center;
+  background-color: black;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  font-family: Integral CF Bold , Arial , sans-serif;
+  height: 180px;
+  justify-content: space-around;
+  left: 0;
+  margin: auto;
+  margin-top: -90px;
+  position: absolute;
+  right: 0;
+  width: 85%;
+  z-index: 1;
+
+}
+
+.newsletter-section h1 {
+  color: white;
+  font-size: 40px;
+  height: 94px;
+  width: 550px;
+}
+
+.newsletter-form {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  width: 350px;
+}
+
+.newsletter-input, .newsletter-button {
+  background-color: white;
+  border-radius: 62px;
+  color: black;
+  font-size: 16px;
+  height: 48px;
+  margin: 5px;
+  max-width: 100%;
+}
+
+.newsletter-input {
+  background-image: url('./assets/mail-icon.svg');
+  background-position: 5%;
+  background-repeat: no-repeat;
+  padding-left: 45px;
+}
+
+.newsletter-input:focus {
+  outline: none;
+}
+
+.newsletter-input::placeholder {
+  color: black;
+  font-family: Satoshi Regular , Times , serif;
+  opacity: 40%;
+}
+
+.newsletter-button {
+  font-family: Satoshi Medium , Times , serif;
+}
+
+.newsletter-button:hover {
+  cursor: pointer;
+}
+
+footer {
+  align-items: center;
+  background-color: var(--light-gray);
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  position: relative;
+  width: 100%;
+}
+
+.utils-section {
+  color: black;
+  display: flex;
+  flex-direction: row;
+  height: 177px;
+  justify-content: space-between;
+  margin-top: 50px;
+  padding-top: 90px;
+  width: 85%;
+}
+
+.socials-section > h1 {
+  font-family: Integral CF Bold , Arial , sans-serif;
+  font-size: 33px;
+  vertical-align: middle;
+}
+
+.socials-section > p {
+  font-family: Satoshi Regular , Times , serif;
+  font-size: 14px;
+  width: 248px;
+}
+
+.socials-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 248px;
+}
+
+.socials-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.socials-container > img:hover {
+  cursor: pointer;
+}
+
+.utils-section > dl {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: fit-content;
+}
+
+.utils-section dt {
+  font-family: Satoshi Medium , Times , serif;
+  font-size: 16px;
+}
+
+.utils-section dd {
+  font-family: Satoshi Regular , Times , serif;
+  font-size: 16px;
+  opacity: 60%;
+  width: fit-content;
+}
+
+.utils-section dd:hover {
+  cursor: pointer;
+}
+
+.signature-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 85%;
+}
+
+.signature-section > p {
+  font-family: Satoshi Regular , Times , serif;
+  font-size: 14px;
+  margin-top: 10px;
+  opacity: 60%;
+}
+
+.signature-section img:hover {
+  cursor: pointer;
 }
