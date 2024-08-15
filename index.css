@@ -1,5 +1,9 @@
 @media only screen and ( min-width : 390px ) {
 
+  html {
+    overflow-x: hidden;
+  }
+
   body {
     background-color: white;
     font-family: Satoshi Regular , serif;
@@ -44,7 +48,7 @@
     align-items: center;
     display: flex;
     flex-direction: row;
-    height: 95px;
+    height: 70px;
     justify-content: space-evenly;
     margin: auto;
     width: 100%;
@@ -64,13 +68,12 @@
   }
 
   .main {
-    margin-top: 133px;
+    margin-top: 104px;
     width: 100%;
   }
 
   .models-section {
     background-color: var(--gray);
-    border: 1px red solid;
     display: flex;
     flex-direction: column;
     height: fit-content;
@@ -130,8 +133,6 @@
 
   .mark-container {
     height: 52px;
-
-    /* margin-top: 15px; */
     width: 30%;
   }
 
@@ -158,9 +159,141 @@
     display: none;
   }
 
+  main > hr {
+    margin-bottom: 100px;
+    margin-top: 100px;
+  }
+
+  footer > hr {
+    background-color: black;
+    height: 1px;
+    margin-bottom: 15px;
+    margin-top: 50px;
+    opacity: 10%;
+    width: 85%;
+  }
+
   .models-img {
     content: url('./assets/models-mobile.png');
     max-width: 100%;
+  }
+
+  .groups-section {
+    align-items: center;
+    background-color: black;
+    display: flex;
+    flex-flow: row wrap;
+    height: 146px;
+    justify-content: space-evenly;
+  }
+
+  .versace {
+    content: url('./assets/versace-mobile.png');
+  }
+
+  .zara {
+    content: url('./assets/zara-mobile.png');
+  }
+
+  .gucci {
+    content: url('./assets/gucci-mobile.png');
+  }
+
+  .prada {
+    content: url('./assets/prada-mobile.png');
+  }
+
+  .calvin-klein {
+    content: url('./assets/calvin-klein-mobile.png');
+  }
+
+  .arrivals-section, .selling-section {
+    align-items: center;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    width: 100%;
+  }
+
+  .arrivals-container, .selling-container {
+    display: flex;
+    justify-content: center;
+    margin-left: 10%;
+  }
+
+  .arrivals-section > h1, .selling-section > h1, .dress-style-section > h1 {
+    font-family: Integral CF Bold , Arial , sans-serif;
+    font-size: 32px;
+    min-width: 100%;
+    text-align: center;
+  }
+
+  .arrival-card, .selling-card {
+    font-family: Satoshi Bold , Times , serif;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-top: 25px;
+    max-width: 50vw;
+    min-width: 50vw;
+  }
+
+  .arrival-product, .selling-product {
+    width: 100%;
+  }
+
+  .arrival-card > p, .selling-card > p {
+    font-size: 16px;
+    margin-top: 5px;
+  }
+
+  .arrival-card h1, .selling-card h1 {
+    display: inline;
+    font-size: 20px;
+    margin-right: 5px;
+  }
+
+  .arrival-rate, .selling-rate {
+    display: block;
+    margin-bottom: 5px;
+    margin-top: 5px;
+  }
+
+  .arrival-card del, .selling-card del {
+    opacity: 40%;
+  }
+
+  .arrival-price, .selling-price {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    height: 32px;
+  }
+
+  .arrivals-button, .selling-button {
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 62px;
+    display: inline;
+    font-family: Satoshi Medium , Times , serif;
+    font-size: 14px;
+    height: 46px;
+    margin-top: 25px;
+    width: 358px;
+  }
+
+  .arrivals-button:hover, .selling-button:hover {
+    cursor: pointer;
+  }
+
+  main > hr {
+    background-color: black;
+    height: 1px;
+    margin: auto;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    opacity: 10%;
+    width: 90%;
   }
 
   .style-1 {
@@ -198,6 +331,10 @@
     width: 85%;
   }
 
+  .menu-icon {
+    display: none;
+  }
+
   .nav-list {
     display: flex;
     flex-direction: row;
@@ -221,6 +358,7 @@
     background-repeat: no-repeat;
     border: 0;
     border-radius: 62px;
+    display: inline-block;
     font-size: 16px;
     height: 50%;
     padding-left: 45px;
@@ -290,27 +428,7 @@
     height: 74px;
     justify-content: space-evenly;
     margin-left: 15%;
-    margin-top: 30px;
-    width: 596;
-  }
-
-  main > hr {
-    background-color: black;
-    height: 1px;
-    margin: auto;
-    margin-bottom: 100px;
-    margin-top: 100px;
-    opacity: 10%;
-    width: 90%;
-  }
-
-  footer > hr {
-    background-color: black;
-    height: 1px;
-    margin-bottom: 15px;
-    margin-top: 50px;
-    opacity: 10%;
-    width: 85%;
+    width: 596px;
   }
 
   .marks-section > hr {
@@ -328,11 +446,27 @@
   }
 
   .groups-section {
-    align-items: center;
-    background-color: black;
-    display: flex;
     height: 122px;
-    justify-content: space-evenly;
+  }
+
+  .versace {
+    content: url('./assets/versace.svg');
+  }
+
+  .zara {
+    content: url('./assets/zara.svg');
+  }
+
+  .gucci {
+    content: url('./assets/gucci.svg');
+  }
+
+  .prada {
+    content: url('./assets/prada.svg');
+  }
+
+  .calvin-klein {
+    content: url('./assets/calvin-klein.svg');
   }
 
   .arrival-container > img, .selling-container > img {
@@ -378,86 +512,44 @@
     cursor: pointer;
   }
 
-
   .arrivals-section, .selling-section {
-    background-color: white;
-    display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 75px;
-    width: 100%;
   }
 
   .arrivals-section > h1, .selling-section > h1, .dress-style-section > h1 {
-    font-family: Integral CF Bold , Arial , sans-serif;
     font-size: 48px;
-    min-width: 100%;
-    text-align: center;
   }
 
   .arrivals-container, .selling-container {
-    display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    width: 90%;
   }
 
   .arrival-card, .selling-card {
-    font-family: Satoshi Bold , Times , serif;
     height: 395px;
     margin-left: 1%;
     margin-right: 1%;
     margin-top: 50px;
-    width: 295px;
+    max-width: 295px;
+    min-width: 295px;
   }
-
 
   .arrival-card > p, .selling-card > p {
     font-size: 20px;
-    margin-top: 5px;
   }
 
   .arrival-card h1, .selling-card h1 {
-    display: inline;
     font-size: 24px;
-    margin-right: 5px;
-  }
-
-  .arrival-rate, .selling-rate {
-    display: block;
-    margin-bottom: 5px;
-    margin-top: 5px;
-  }
-
-  .arrival-card del, .selling-card del {
-    opacity: 40%;
-  }
-
-  .arrival-price, .selling-price {
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    height: 32px;
-  }
-
-  .arrival-price > h1, .selling-price > h1 {
     margin-right: 10px;
   }
 
   .arrivals-button, .selling-button {
-    background-color: white;
-    border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 62px;
-    display: inline;
-    font-family: Satoshi Medium , Times , serif;
     font-size: 16px;
     height: 52px;
     margin-top: 50px;
     width: 218px;
-  }
-
-  .arrivals-button:hover, .selling-button:hover {
-    cursor: pointer;
   }
 
   .dress-style-section {
