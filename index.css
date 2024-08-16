@@ -348,7 +348,6 @@
   }
 
   .reviews-section {
-    border: greenyellow 1px solid;
     display: flex;
     flex-direction: column;
     margin-top: 50px;
@@ -370,46 +369,25 @@
     width: 24px;
   }
 
+  .reviews-button-left {
+    margin-right: 9.5%;
+  }
+
   .reviews-div {
-    border: blue 1px solid;
     display: flex;
     max-width: 100%;
     min-height: 186px;
   }
 
   .reviews-container {
-    animation: bannermove 10s linear infinite alternate;
     display: flex;
     height: fit-content;
-    padding-bottom: 5%;
-    padding-top: 5%;
     width: fit-content;
   }
 
-  .reviews-container:hover {
-    animation-play-state: paused;
-  }
-
   .reviews-container > img {
-    height: 186px;
-
-  }
-
-  @keyframes bannermove {
-
-    0% {
-      transform: translateX(0);
-    }
-
-    100% {
-      transform: translateX(-32%);
-    }
-  }
-
-  .reviews-container > img:hover {
-    background-color: var(--light-gray);
-    border: black 1px solid;
-    border-radius: 20px;
+    margin: 5vw;
+    width: 90vw;
   }
 }
 
@@ -695,6 +673,7 @@
   }
 
   .reviews-section {
+    margin: auto;
     margin-top: 100px;
     padding-bottom: 200px;
     width: 85%;
@@ -712,12 +691,13 @@
     width: 24px;
   }
 
-  .reviews-div {
-    height: 240px;
-  }
 
   .reviews-button-left {
     margin-right: 9.5%;
+  }
+
+  .reviews-div {
+    height: fit-content;
   }
 
   .reviews-container {
@@ -730,6 +710,11 @@
 
   .reviews-container:hover {
     animation-play-state: paused;
+  }
+
+  .reviews-container > img {
+    margin: 10px;
+    width:min-content;
   }
 
   @keyframes bannermove {
