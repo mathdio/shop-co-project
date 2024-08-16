@@ -47,20 +47,37 @@
   .nav-bar {
     align-items: center;
     display: flex;
-    flex-direction: row;
     height: 70px;
-    justify-content: space-evenly;
-    margin: auto;
+    justify-content: space-between;
     width: 100%;
+  }
+
+  .buttons-section {
+    display: flex;
+    margin-right: 5%;
+  }
+
+  .buttons-section > * {
+    margin-left: 10px;
   }
 
   .nav-list {
     display: none;
   }
 
+  .title-container {
+    display: flex;
+    margin-left: 5%;
+  }
+
+  .menu-icon {
+    margin-right: 15px;
+  }
+
   .nav-title {
     font-family: Integral CF Bold , Arial , sans-serif;
     font-size: 24px;
+    line-height: 24px;
   }
 
   .search-input {
@@ -68,7 +85,7 @@
   }
 
   .main {
-    margin-top: 128px;
+    margin-top: 104px;
     width: 100%;
   }
 
@@ -601,6 +618,7 @@
 
   .nav-bar {
     height: 90px;
+    justify-content: space-evenly;
     width: 85%;
   }
 
@@ -638,6 +656,10 @@
     width: 40%;
   }
 
+  .search-input-mobile {
+    display: none;
+  }
+
   .search-input:focus {
     outline: none;
   }
@@ -651,9 +673,12 @@
   .buttons-section {
     display: flex;
     justify-content: space-between;
-    width: 60px;
+    width: fit-content;
   }
 
+  .main {
+    margin-top: 128px;
+  }
 
   .models-section {
     flex-direction: row;
