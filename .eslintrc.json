@@ -4,6 +4,8 @@
       "es2021": true
   },
   "extends": [
+      // "standard-with-typescript",
+      // "plugin:react/recommended",
       "@trybe/eslint-config-frontend/typescript"
   ],
   "parserOptions": {
@@ -11,6 +13,7 @@
       "sourceType": "module"
   },
   "plugins": [
+      "react",
       "simple-import-sort"
   ],
   "rules": {
