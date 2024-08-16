@@ -1,9 +1,16 @@
 const styles = document.querySelectorAll('.styles-imgs > img');
 const arrivalCards = document.querySelectorAll('.arrival-card');
 const sellingCards = document.querySelectorAll('.selling-card');
-const reviewsContainer = document.querySelector('.reviews-container');
-const rightArrow = document.querySelector('.reviews-button-right');
-const leftArrow = document.querySelector('.reviews-button-left');
+const closeButton = document.querySelector('.close-button');
+const mainElement = document.querySelector('.main');
+// const reviewsContainer = document.querySelector('.reviews-container');
+// const rightArrow = document.querySelector('.reviews-button-right');
+// const leftArrow = document.querySelector('.reviews-button-left');
+
+closeButton.addEventListener('click', () => {
+  document.querySelector('.header > span').remove();
+  mainElement.style.marginTop = "90px";
+})
 
 function addGrowEffect({ target }) {
   target.classList.add('grow');

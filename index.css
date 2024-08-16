@@ -44,6 +44,10 @@
     cursor: pointer;
   }
 
+  .close-button {
+    display: none;
+  }
+
   .nav-bar {
     align-items: center;
     display: flex;
@@ -616,14 +620,29 @@
     font-size: 14px;
   }
 
+  .close-button {
+    display: inline-block;
+    margin-right: 5%;
+    position: absolute;
+    right: 0;
+  }
+
+  .close-button:hover {
+    cursor: pointer;
+  }
+
   .nav-bar {
     height: 90px;
     justify-content: space-evenly;
-    width: 85%;
+    width: 100%;
   }
 
   .menu-icon {
     display: none;
+  }
+
+  .title-container {
+    margin-left: 0;
   }
 
   .nav-list {
@@ -673,6 +692,7 @@
   .buttons-section {
     display: flex;
     justify-content: space-between;
+    margin-right: 0;
     width: fit-content;
   }
 
@@ -732,6 +752,10 @@
     height: 100%;
     margin-left: 2%;
     margin-right: 2%;
+  }
+
+  .second-mark-hr {
+    display: block;
   }
 
   .mark-container > h1 {
