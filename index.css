@@ -17,7 +17,7 @@
     position: fixed;
     top: 0;
     width: 100vw;
-    z-index: 1;
+    z-index: 2;
   }
 
   .header > span {
@@ -68,7 +68,7 @@
   }
 
   .main {
-    margin-top: 104px;
+    margin-top: 128px;
     width: 100%;
   }
 
@@ -114,7 +114,6 @@
     font-family: Satoshi Medium , Times , serif;
     font-size: 16px;
     height: 52px;
-    margin: auto;
     margin-top: 30px;
     width: 90%;
   }
@@ -162,15 +161,6 @@
   main > hr {
     margin-bottom: 100px;
     margin-top: 100px;
-  }
-
-  footer > hr {
-    background-color: black;
-    height: 1px;
-    margin-bottom: 15px;
-    margin-top: 50px;
-    opacity: 10%;
-    width: 85%;
   }
 
   .models-img {
@@ -468,7 +458,9 @@
     background-color: var(--light-gray);
     display: flex;
     flex-direction: column;
-    height: 846px;
+    height: fit-content;
+    max-height: fit-content;
+    padding-bottom: 50px;
     padding-top: 147px;
     position: relative;
     width: 100%;
@@ -509,7 +501,8 @@
   .socials-container {
     display: flex;
     flex-direction: row;
-    margin-top: 15px;
+
+    /* margin-top: 15px; */
   }
 
   .socials-container > img:hover {
@@ -544,6 +537,48 @@
   .utils-section dd:hover {
     cursor: pointer;
   }
+
+  footer > hr {
+    background-color: black;
+    height: 1px;
+    margin-bottom: 15px;
+    margin-top: 50px;
+    opacity: 10%;
+    width: 90%;
+  }
+
+  .signature-section {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+  }
+
+  .signature-section > p {
+    font-family: Satoshi Regular , Times , serif;
+    font-size: 14px;
+    opacity: 60%;
+  }
+
+  .signature-section div:hover {
+    cursor: pointer;
+  }
+
+  .flags-container {
+    display: flex;
+    margin-top: 15px;
+  }
+
+  .flag-card {
+    align-items: center;
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    height: 25px;
+    justify-content: center;
+    margin-right: 10px;
+    min-width: 40px;
+  }
 }
 
 @media only screen and ( min-width : 1440px ) {
@@ -560,7 +595,12 @@
     height: 38px;
   }
 
+  .header > span > p {
+    font-size: 14px;
+  }
+
   .nav-bar {
+    height: 90px;
     width: 85%;
   }
 
@@ -593,7 +633,7 @@
     border-radius: 62px;
     display: inline-block;
     font-size: 16px;
-    height: 50%;
+    height: 48px;
     padding-left: 45px;
     width: 40%;
   }
@@ -637,6 +677,11 @@
     width: 577px;
   }
 
+  .section-texts {
+    align-items: flex-start;
+    width: 545px;
+  }
+
   .models-text {
     height: 33px;
     margin-left: 15%;
@@ -645,12 +690,6 @@
   }
 
   .models-button {
-    background-color: black;
-    border-radius: 62px;
-    color: white;
-    font-family: Satoshi Medium , Times , serif;
-    font-size: 16px;
-    height: 52px;
     margin-left: 15%;
     margin-top: 30px;
     width: 210px;
@@ -742,7 +781,6 @@
   }
 
   .arrivals-section, .selling-section {
-    border: 1px solid red;
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 75px;
@@ -753,7 +791,6 @@
   }
 
   .arrivals-container, .selling-container {
-    border: 1px solid greenyellow;
     flex-wrap: wrap;
     margin-left: 0;
   }
@@ -921,7 +958,7 @@
   }
 
   footer {
-    height: 500px;
+    height: fit-content;
   }
 
   .utils-section {
@@ -931,6 +968,7 @@
     justify-content: space-between;
     margin-top: 0;
     width: 85%;
+
   }
 
   .socials-section > h1 {
@@ -961,22 +999,22 @@
     margin-top: 0;
   }
 
+  footer > hr {
+    width: 85%;
+  }
+
   .signature-section {
-    display: flex;
+    align-items: center;
     flex-direction: row;
     justify-content: space-between;
     width: 85%;
   }
 
   .signature-section > p {
-    font-family: Satoshi Regular , Times , serif;
     font-size: 14px;
-    margin-top: 10px;
-    opacity: 60%;
   }
 
-  .signature-section img:hover {
-    cursor: pointer;
+  .flags-container {
+    margin-top: 0;
   }
-
 }
