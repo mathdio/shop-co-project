@@ -303,6 +303,7 @@
     border-radius: 40px;
     display: flex;
     flex-direction: column;
+    height: 975px;
     justify-content: center;
     margin: auto;
     margin-top: 50px;
@@ -313,8 +314,8 @@
     font-family: Integral CF Bold , Arial , sans-serif;
     font-size: 32px;
     height: 72px;
-    margin-bottom: 20px;
-    margin-top: 30px;
+    margin-bottom: 10px;
+    margin-top: 0;
     max-width: 70%;
     text-align: center;
   }
@@ -344,6 +345,71 @@
 
   .style-4 {
     content: url('./assets/style-4-mobile.svg');
+  }
+
+  .reviews-section {
+    border: greenyellow 1px solid;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    width: 100%;
+  }
+
+  .reviews-title {
+    font-family: Integral CF Bold , Arial , sans-serif;
+    font-size: 32px;
+    margin: auto;
+    width: 90%;
+  }
+
+  .reviews-button-right, .reviews-button-left {
+    margin-right: 7.5%;
+    margin-top: 25px;
+    position: absolute;
+    right: 0;
+    width: 24px;
+  }
+
+  .reviews-div {
+    border: blue 1px solid;
+    display: flex;
+    max-width: 100%;
+    min-height: 186px;
+  }
+
+  .reviews-container {
+    animation: bannermove 10s linear infinite alternate;
+    display: flex;
+    height: fit-content;
+    padding-bottom: 5%;
+    padding-top: 5%;
+    width: fit-content;
+  }
+
+  .reviews-container:hover {
+    animation-play-state: paused;
+  }
+
+  .reviews-container > img {
+    height: 186px;
+
+  }
+
+  @keyframes bannermove {
+
+    0% {
+      transform: translateX(0);
+    }
+
+    100% {
+      transform: translateX(-32%);
+    }
+  }
+
+  .reviews-container > img:hover {
+    background-color: var(--light-gray);
+    border: black 1px solid;
+    border-radius: 20px;
   }
 }
 
@@ -629,16 +695,12 @@
   }
 
   .reviews-section {
-    display: flex;
-    flex-direction: column;
-    margin: auto;
     margin-top: 100px;
     padding-bottom: 200px;
     width: 85%;
   }
 
   .reviews-title {
-    font-family: Integral CF Bold , Arial , sans-serif;
     font-size: 48px;
   }
 
@@ -648,6 +710,10 @@
     position: absolute;
     right: 0;
     width: 24px;
+  }
+
+  .reviews-div {
+    height: 240px;
   }
 
   .reviews-button-left {
@@ -677,18 +743,10 @@
     }
   }
 
-
   .reviews-container > img:hover {
     background-color: var(--light-gray);
     border: black 1px solid;
     border-radius: 20px;
-
-  }
-
-
-  .reviews-div {
-    display: flex;
-    flex-direction: row;
   }
 
   .newsletter-section {
