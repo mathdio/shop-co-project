@@ -26,27 +26,6 @@ function viewAll(cards, parentNode, button) {
   button.remove();
 }
 
-// const mainElementWidth = document.querySelector('.main').getAttribute('width');
-// let reviewsContainer = document.querySelector('.reviews-container');
-// carouselSetup();
-
-// setInterval(carousel, 15000);
-
-// function carousel() {
-//   reviewsContainer.remove();
-//   reviewsContainer = document.querySelector('.reviews-container');
-//   carouselSetup();
-// }
-
-// function carouselSetup() {
-//   reviewsDiv.appendChild(reviewsContainer.cloneNode(true));
-// }
-
-// arrivalCards.forEach((card) => {
-//   card.addEventListener('mouseover', (event) => addGrowEffect(event));
-//   card.addEventListener('mouseout', (event) => removeGrowEffect(event));
-// });
-
 function addGrowEffect({ target }) {
   target.classList.add('grow');
 }
