@@ -229,7 +229,7 @@
 
   .arrivals-container, .selling-container {
     display: flex;
-    margin-left: 10%;
+    margin-left: 15%;
     max-width: 100%;
     overflow-x: hidden;
   }
@@ -833,6 +833,7 @@
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 75px;
+    width: 100%;
   }
 
   .arrivals-section > h1, .selling-section > h1, .dress-style-section > h1 {
@@ -843,6 +844,9 @@
     flex-wrap: wrap;
     justify-content: center;
     margin-left: 0;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    width: 100%;
   }
 
   .arrival-card, .selling-card {

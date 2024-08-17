@@ -69,6 +69,8 @@ function viewAll(cards, parentNode, button) {
         parentNode.appendChild(card.cloneNode(true));
     });
     button.remove();
+
+    parentNode.scrollLeft += 200;
 }
 
 const arrivalsButton = document.querySelector(".arrivals-button");
