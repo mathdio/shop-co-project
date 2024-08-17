@@ -106,7 +106,7 @@ function end() {
     isMoving = false;
 }
 
-[arrivalsContainer, sellingContainer].forEach((container) => {
+[arrivalsContainer, sellingContainer, reviewsContainer].forEach((container) => {
     container.addEventListener("mousedown", (event) => start(event, container));
     container.addEventListener("mousemove", (event) => move(event, container));
     container.addEventListener("mouseup", end);
