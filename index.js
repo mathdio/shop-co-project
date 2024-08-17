@@ -82,3 +82,32 @@ const sellingContainer = document.querySelector(".selling-container");
 sellingButton.addEventListener("click", () => {
     viewAll(sellingCards, sellingContainer, sellingButton);
 });
+
+let isMoving = false;
+let startX;
+let scrollingLeft;
+
+function start(event, container) {
+    isMoving = true;
+    startX = event.pageX || event.touches[0].pageX - arrivalsContainer.offsetLeft;    
+    scrollingLeft = container.scrollLeft;
+}
+
+function move(event, container) {
+    if (!isMoving) return;
+    event.preventDefault();
+
+    const x = event.pageX || event.touches[0].pageX - arrivalsContainer.offsetLeft;
+    const dist = (x - startX);
+    container.scrollLeft = scrollingLeft - dist;
+}
+
+function end() {
+    isMoving = false;
+}
+
+[arrivalsContainer, sellingContainer].forEach((container) => {
+    container.addEventListener("mousedown", (event) => start(event, container));
+    container.addEventListener("mousemove", (event) => move(event, container));
+    container.addEventListener("mouseup", end);
+});
