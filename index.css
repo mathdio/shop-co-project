@@ -591,10 +591,6 @@
     opacity: 60%;
   }
 
-  .signature-section div:hover {
-    cursor: pointer;
-  }
-
   .flags-container {
     display: flex;
     margin-top: 15px;
@@ -609,6 +605,10 @@
     justify-content: center;
     margin-right: 10px;
     min-width: 40px;
+
+    &:hover {
+      cursor: pointer;
+    }
   }
 }
 
