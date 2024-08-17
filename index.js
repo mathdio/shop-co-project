@@ -112,4 +112,8 @@ function end() {
     container.addEventListener("mousedown", (event) => start(event, container));
     container.addEventListener("mousemove", (event) => move(event, container));
     container.addEventListener("mouseup", end);
+    
+    container.addEventListener("touchstart", (event) => start(event, container));
+    container.addEventListener("touchmove", (event) => move(event, container));
+    container.addEventListener("touchend", end);
 });
