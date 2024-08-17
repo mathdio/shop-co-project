@@ -404,11 +404,13 @@
     overflow-x: hidden;
     scroll-behavior: smooth;
     width: fit-content;
-  }
 
-  .reviews-container > img {
-    margin: 5vw;
-    width: 90vw;
+    & > img {
+      margin: 5vw;
+      pointer-events: none;
+      user-select: none;
+      width: 90vw;
+    }
   }
 
   .newsletter-section {
