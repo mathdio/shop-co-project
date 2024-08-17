@@ -394,8 +394,8 @@
   .reviews-container {
     display: flex;
     height: fit-content;
-
-    /* overflow-x: auto; */
+    overflow-x: hidden;
+    scroll-behavior: smooth;
     width: fit-content;
   }
 

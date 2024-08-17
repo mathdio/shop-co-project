@@ -3,9 +3,17 @@ const arrivalCards = document.querySelectorAll('.arrival-card');
 const sellingCards = document.querySelectorAll('.selling-card');
 const closeButton = document.querySelector('.close-button');
 const mainElement = document.querySelector('.main');
-// const reviewsContainer = document.querySelector('.reviews-container');
-// const rightArrow = document.querySelector('.reviews-button-right');
-// const leftArrow = document.querySelector('.reviews-button-left');
+const reviewsContainer = document.querySelector('.reviews-container');
+const rightArrow = document.querySelector('.reviews-button-right');
+const leftArrow = document.querySelector('.reviews-button-left');
+
+rightArrow.addEventListener('click', () => {
+  reviewsContainer.scrollLeft += 400;
+});
+
+leftArrow.addEventListener('click', () => {
+  reviewsContainer.scrollLeft -= 400;
+});
 
 closeButton.addEventListener('click', () => {
   document.querySelector('.header > span').remove();
