@@ -6,13 +6,50 @@ const mainElement = document.querySelector('.main');
 const reviewsContainer = document.querySelector('.reviews-container');
 const rightArrow = document.querySelector('.reviews-button-right');
 const leftArrow = document.querySelector('.reviews-button-left');
+let scrollEnd = true;
+
+
+
+let scrollsList = [];
+let hasScrolls = false;
+
+function scrollRight() {
+  reviewsContainer.scrollLeft += 400;
+}
+
+function scrollLeft() {
+  reviewsContainer.scrollLeft -= 400;
+}
+
+reviewsContainer.onscrollend = () => {
+  while (scrollsList.length > 0) {
+    scrollsList[0]();
+    scrollsList.shift();
+  }
+  if (scrollsList.length === 0) scrollEnd = true;
+}
 
 rightArrow.addEventListener('click', () => {
-  reviewsContainer.scrollLeft += 400;
+  scrollsList.push(scrollRight);
+  hasScrolls = true;
+  
+  if (scrollEnd) {
+    scrollRight();
+    scrollEnd = false;
+    scrollsList.shift();
+  }
 });
 
+
 leftArrow.addEventListener('click', () => {
-  reviewsContainer.scrollLeft -= 400;
+  scrollsList.push(scrollLeft);
+  hasScrolls = true;
+
+  if (scrollEnd) {
+    scrollLeft();
+    scrollEnd = false;
+    scrollsList.shift();
+  }
 });
 
 closeButton.addEventListener('click', () => {
