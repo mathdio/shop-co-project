@@ -6,6 +6,8 @@
 
   body {
     background-color: white;
+
+    /* border: 1px solid red; */
     font-family: Satoshi Regular , serif;
     margin: auto;
     overflow-x: hidden;
@@ -923,10 +925,11 @@
 
   .reviews-title {
     font-size: 48px;
+    margin: 0;
   }
 
   .reviews-button-right, .reviews-button-left {
-    margin-right: 7.5%;
+    margin-right: 14%;
     margin-top: 25px;
     position: absolute;
     right: 0;
@@ -935,7 +938,7 @@
 
 
   .reviews-button-left {
-    margin-right: 9.5%;
+    margin-right: 16%;
   }
 
   .reviews-div {
