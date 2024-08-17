@@ -27,7 +27,6 @@ reviewsContainer.onscrollend = () => {
 
 rightArrow.addEventListener("click", () => {
     scrollsList.push(scrollRight);
-  
     if (scrollEnd) {
         scrollRight();
         scrollEnd = false;
@@ -38,7 +37,6 @@ rightArrow.addEventListener("click", () => {
 
 leftArrow.addEventListener("click", () => {
     scrollsList.push(scrollLeft);
-
     if (scrollEnd) {
         scrollLeft();
         scrollEnd = false;
@@ -69,7 +67,6 @@ function viewAll(cards, parentNode, button) {
         parentNode.appendChild(card.cloneNode(true));
     });
     button.remove();
-
     parentNode.scrollLeft += 200;
 }
 
