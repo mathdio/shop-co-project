@@ -21,8 +21,13 @@
     margin: 10%;
 
     & > li {
+      display: flex;
       font-family: Satoshi Bold , Times , serif;
       margin-top: 20%;
+
+      & > input {
+        margin-left: 5px;
+      }
 
       &:hover {
         cursor: pointer;
@@ -704,11 +709,16 @@
   }
 
   .nav-list > li {
+    display: flex;
     white-space: nowrap;
-  }
 
-  .nav-list > li:hover {
-    cursor: pointer;
+    & > input {
+      margin-left: 5px;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
   }
 
   .search-input {
