@@ -4,10 +4,45 @@
     overflow-x: hidden;
   }
 
+  aside {
+    background-color: white;
+    display: flex;
+    height: 100vh;
+    justify-content: space-between;
+    position: absolute;
+    transition: all 1s ease-in-out;
+    width: 100vw;
+    z-index: 3;
+  }
+
+  .menu-list {
+    height: fit-content;
+    list-style-type: none;
+    margin: 10%;
+
+    & > li {
+      font-family: Satoshi Bold , Times , serif;
+      margin-top: 20%;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .closed {
+    margin-left: -100vw;
+  }
+
+  .close-sidebar {
+    background-color: black;
+    height: 24px;
+    margin: 10%;
+    width: 24px;
+  }
+
   body {
     background-color: white;
-
-    /* border: 1px solid red; */
     font-family: Satoshi Regular , serif;
     margin: auto;
     overflow-x: hidden;
@@ -616,6 +651,10 @@
 
   body {
     width: 1440px;
+  }
+
+  aside {
+    display: none;
   }
 
   .header {

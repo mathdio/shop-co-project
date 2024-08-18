@@ -1,3 +1,28 @@
+const titleContainer = document.querySelector(".title-container");
+const template = document.getElementsByTagName("template")[0];
+const menuContent = template.content.children[0].cloneNode(true);
+
+document.addEventListener("DOMContentLoaded", function() {
+    titleContainer.insertAdjacentElement("afterend", menuContent);
+});
+
+const menuButton = document.querySelector(".menu-icon");
+const asideElement = document.getElementsByTagName("aside")[0];
+const closeSidebarButton = document.querySelector(".close-sidebar");
+
+menuButton.addEventListener("click", () => {
+    if (asideElement.children[0].localName !== "ul") {
+        menuContent.classList.remove("nav-list");
+        menuContent.classList.add("menu-list");
+        closeSidebarButton.insertAdjacentElement("beforebegin", menuContent);
+    }
+    asideElement.classList.toggle("closed");
+});
+
+closeSidebarButton.addEventListener("click", () => {
+    asideElement.classList.toggle("closed");
+});
+
 const styles = document.querySelectorAll(".styles-imgs > img");
 const arrivalCards = document.querySelectorAll(".arrival-card");
 const sellingCards = document.querySelectorAll(".selling-card");
