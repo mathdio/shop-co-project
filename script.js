@@ -3,6 +3,26 @@ const arrivalCards = document.querySelectorAll(".arrival-card");
 const sellingCards = document.querySelectorAll(".selling-card");
 const closeButton = document.querySelector(".close-button");
 const mainElement = document.querySelector(".main");
+
+const newsletterButton = document.querySelector(".newsletter-button");
+const newsletterInput = document.querySelector(".newsletter-input");
+const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+newsletterButton.addEventListener("click", (event) => {
+    event.preventDefault();
+
+    if (emailRegex.test(newsletterInput.value)) {
+        alert("Successfully subscribed!");
+        newsletterInput.value = "";
+    } else {
+        alert("E-mail must be valid.");
+    }
+});
+
+newsletterInput.addEventListener("keypress", (event) => {
+    if (event.key === "Enter") event.preventDefault();
+});
+
 const reviewsContainer = document.querySelector(".reviews-container");
 const rightArrow = document.querySelector(".reviews-button-right");
 const leftArrow = document.querySelector(".reviews-button-left");
@@ -83,12 +103,12 @@ sellingButton.addEventListener("click", () => {
 });
 
 let isMoving = false;
-let startX;
+let startPositionX;
 let scrollingLeft;
 
 function start(event, container) {
     isMoving = true;
-    startX = event.pageX || event.touches[0].pageX - arrivalsContainer.offsetLeft;    
+    startPositionX = event.pageX || event.touches[0].pageX - arrivalsContainer.offsetLeft;    
     scrollingLeft = container.scrollLeft;
 }
 
@@ -96,9 +116,9 @@ function move(event, container) {
     if (!isMoving) return;
     event.preventDefault();
 
-    const x = event.pageX || event.touches[0].pageX - arrivalsContainer.offsetLeft;
-    const dist = (x - startX);
-    container.scrollLeft = scrollingLeft - dist;
+    const finalPositionX = event.pageX || event.touches[0].pageX - arrivalsContainer.offsetLeft;
+    const distance = (finalPositionX - startPositionX);
+    container.scrollLeft = scrollingLeft - distance;
 }
 
 function end() {
