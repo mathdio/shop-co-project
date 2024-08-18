@@ -1,9 +1,16 @@
 const titleContainer = document.querySelector(".title-container");
-const template = document.getElementsByTagName("template")[0];
-const menuContent = template.content.children[0].cloneNode(true);
+const templates = document.getElementsByTagName("template");
+const menuContent = templates[0].content.children[0].cloneNode(true);
+const searchInputContent = templates[1].content.children[0].cloneNode(true);
 
 document.addEventListener("DOMContentLoaded", function() {
-    titleContainer.insertAdjacentElement("afterend", menuContent);
+    if (window.innerWidth >= 1440) {
+        titleContainer.insertAdjacentElement("afterend", menuContent);
+        const navList = document.querySelector(".nav-list");
+        navList.insertAdjacentElement("afterend", searchInputContent);
+    } else {
+        searchInputContent.classList.toggle("hide");
+    }
 });
 
 const menuButton = document.querySelector(".menu-icon");
@@ -23,11 +30,26 @@ closeSidebarButton.addEventListener("click", () => {
     asideElement.classList.toggle("closed");
 });
 
+// const searchMobile = document.querySelector(".search-input-mobile");
+// const navBar = document.querySelector(".nav-bar");
+// const mainElement = document.querySelector(".main");
+    
+// searchMobile.addEventListener("click", () => {
+//     const header = document.getElementsByTagName("header")[0];
+//     if (header.lastElementChild.localName !== "input") {
+//         searchInputContent.classList.add("hide");
+//         navBar.insertAdjacentElement("afterend", searchInputContent);
+//         // mainElement.style.marginTop = "149px";
+//     } else {
+//         // mainElement.style.marginTop = "104px";
+//     }
+//     searchInputContent.classList.toggle("hide");
+// });
+
 const styles = document.querySelectorAll(".styles-imgs > img");
 const arrivalCards = document.querySelectorAll(".arrival-card");
 const sellingCards = document.querySelectorAll(".selling-card");
 const closeButton = document.querySelector(".close-button");
-const mainElement = document.querySelector(".main");
 
 const newsletterButton = document.querySelector(".newsletter-button");
 const newsletterInput = document.querySelector(".newsletter-input");
