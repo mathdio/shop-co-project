@@ -14,20 +14,27 @@
   <header class="header">
     <span>
       <p>Sign up and get 20% off to your first order. <u class="underline">Sign Up Now</u></p>
+      <img src="./assets/close-icon.svg" alt="close icon" class="close-button" />
     </span>
     <nav class="nav-bar">
-      <h1 class="nav-title">SHOP.CO</h1>
+      <div class="title-container">
+        <img src="./assets/menu-icon.svg" alt="" class="menu-icon" />
+        <h1 class="nav-title">
+          SHOP.CO
+        </h1>
+      </div>
       <ul class="nav-list">
         <li>
           Shop
           <input type="image" src="./assets/arrow-down.svg" alt="Arrow Down Icon" />
         </li>
         <li>On Sale</li>
-        <li><a href="#new-arrivals">New Arrivals</a></li>
+        <li>New Arrivals</li>
         <li>Brands</li>
       </ul>
       <input class="search-input" placeholder="Search for products..." />
       <section class="buttons-section">
+        <input type="image" src="./assets/darker-search.svg" class="search-input-mobile" alt="search icon">
         <input type="image" src="./assets/cart-icon.svg" alt="Cart Icon" />
         <input type="image" src="./assets/profile-icon.svg" alt="Profile Icon" />
       </section>
@@ -50,35 +57,33 @@
             <h1>2,000+</h1>
             <p>High-Quality Products</p>
           </div>
-          <hr>
+          <hr class="second-mark-hr">
           <div class="mark-container">
             <h1>30,000+</h1>
             <p>Happy Customers</p>
           </div>
         </section>
       </section>
-      <img class="models-img" src="./assets/models.svg" alt="" />
-      <img class="light-icon-1" src="./assets/light-vector.svg" alt="Light Icon" />
-      <img class="light-icon-2" src="./assets/light-vector.svg" alt="Light Icon" />
+      <img class="models-img" alt="" />
     </section>
     <section class="groups-section">
-      <img src="./assets/versace.svg" alt="Versace logo" />
-      <img src="./assets/zara.svg" alt="Zara logo">
-      <img src="./assets/gucci.svg" alt="Gucci logo">
-      <img src="./assets/prada.svg" alt="Prada logo">
-      <img src="./assets/calvin-klein.svg" alt="Calvin Klein logo">
+      <img class="versace" alt="Versace logo" />
+      <img class="zara" alt="Zara logo">
+      <img class="gucci" alt="Gucci logo">
+      <img class="prada" alt="Prada logo">
+      <img class="calvin-klein" alt="Calvin Klein logo">
     </section>
     <section id="new-arrivals" class="arrivals-section">
       <h1>NEW ARRIVALS</h1>
       <section class="arrivals-container">
         <div class="arrival-card original-size">
-          <img src="./assets/arrival-1.svg" alt="product 1">
+          <img src="./assets/arrival-1.svg" alt="product 1" class="arrival-product">
           <p>T-shirt with Tape Details</p>
           <img class="arrival-rate" src="./assets/arrival-rate-1.svg" alt="rate 1">
           <h1>$120</h1>
         </div>
         <div class="arrival-card original-size">
-          <img src="./assets/arrival-2.svg" alt="product 2">
+          <img src="./assets/arrival-2.svg" alt="product 2" class="arrival-product">
           <p>Skinny Fit Jeans</p>
           <img class="arrival-rate" src="./assets/arrival-rate-2.svg" alt="rate 2">
           <div class="arrival-price">
@@ -88,13 +93,13 @@
           </div>
         </div>
         <div class="arrival-card original-size">
-          <img src="./assets/arrival-3.svg" alt="product 3">
+          <img src="./assets/arrival-3.svg" alt="product 3" class="arrival-product">
           <p>Checkered Shirt</p>
           <img class="arrival-rate" src="./assets/arrival-rate-3.svg" alt="rate 3">
           <h1>$180</h1>
         </div>
         <div class="arrival-card original-size">
-          <img src="./assets/arrival-4.svg" alt="product 4">
+          <img src="./assets/arrival-4.svg" alt="product 4" class="arrival-product">
           <p>Sleeve Striped T-shirt</p>
           <img class="arrival-rate" src="./assets/arrival-rate-4.svg" alt="rate 4">
           <div class="arrival-price">
@@ -110,7 +115,7 @@
       <h1>TOP SELLING</h1>
       <section class="selling-container">
         <div class="selling-card">
-          <img src="./assets/selling-1.svg" alt="product 1">
+          <img src="./assets/selling-1.svg" alt="product 1" class="selling-product">
           <p>Vertical Striped Shirt</p>
           <img class="selling-rate" src="./assets/selling-rate-1.svg" alt="rate 1">
           <div class="selling-price">
@@ -120,19 +125,19 @@
           </div>
         </div>
         <div class="selling-card">
-          <img src="./assets/selling-2.svg" alt="product 2">
+          <img src="./assets/selling-2.svg" alt="product 2" class="selling-product">
           <p>Courage Graphic T-shirt</p>
           <img class="selling-rate" src="./assets/selling-rate-2.svg" alt="rate 2">
           <h1>$145</h1>
         </div>
         <div class="selling-card">
-          <img src="./assets/selling-3.svg" alt="product 3">
+          <img src="./assets/selling-3.svg" alt="product 3" class="selling-product">
           <p>Loose Fit Bermuda Shorts</p>
           <img class="selling-rate" src="./assets/selling-rate-3.svg" alt="rate 3">
           <h1>$80</h1>
         </div>
         <div class="selling-card">
-          <img src="./assets/selling-4.svg" alt="product 4">
+          <img src="./assets/selling-4.svg" alt="product 4" class="selling-product">
           <p>Faded Skinny Jeans</p>
           <img class="selling-rate" src="./assets/selling-rate-4.svg" alt="rate 4">
           <h1>$210</h1>
@@ -143,10 +148,10 @@
     <section class="dress-style-section">
       <h1>BROWSE BY DRESS STYLE</h1>
       <section class="styles-imgs">
-        <img class="original-size" src="./assets/style-1.svg" alt="">
-        <img class="original-size" src="./assets/style-2.svg" alt="">
-        <img class="original-size" src="./assets/style-3.svg" alt="">
-        <img class="original-size" src="./assets/style-4.svg" alt="">
+        <img class="original-size style-1" alt="">
+        <img class="original-size style-2" alt="">
+        <img class="original-size style-3" alt="">
+        <img class="original-size style-4" alt="">
       </section>
     </section>
     <section class="reviews-section">
@@ -216,11 +221,22 @@
     <section class="signature-section">
       <p>Shop.co © 2000-2023, All Rights Reserved</p>
       <div class="flags-container">
-        <img src="./assets/flag-1.svg" alt="visa flag icon">
-        <img src="./assets/flag-2.svg" alt="mastercard flag icon">
-        <img src="./assets/flag-3.svg" alt="paypal flag icon">
-        <img src="./assets/flag-4.svg" alt="applepay flag icon">
-        <img src="./assets/flag-5.svg" alt="googlepay flag icon">
+        <div class="flag-card">
+          <img src="./assets/flag-1.svg" alt="visa flag icon">
+        </div>
+        <div class="flag-card">
+          <img src="./assets/flag-2.svg" alt="mastercard flag icon">
+
+        </div>
+        <div class="flag-card">
+          <img src="./assets/flag-3.svg" alt="paypal flag icon">
+        </div>
+        <div class="flag-card">
+          <img src="./assets/flag-4.svg" alt="applepay flag icon">
+        </div>
+        <div class="flag-card">
+          <img src="./assets/flag-5.svg" alt="googlepay flag icon">
+        </div>
       </div>
     </section>
   </footer>

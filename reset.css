@@ -11,6 +11,10 @@
   padding: 0;
 }
 
+html {
+  width: 100vw;
+}
+
 @font-face {
   font-family: Integral CF Bold;
   src: url('./assets/integralcf-bold.otf');
