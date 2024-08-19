@@ -11,6 +11,23 @@
 </head>
 
 <body>
+  <template>
+    <ul class="nav-list">
+      <li>
+        <p>Shop</p>
+        <input type="image" src="./assets/arrow-down.svg" alt="Arrow Down Icon" class="arrow-down-shop" />
+      </li>
+      <li>On Sale</li>
+      <li>New Arrivals</li>
+      <li>Brands</li>
+    </ul>
+  </template>
+  <template>
+    <input class="search-input" placeholder="Search for products..." />
+  </template>
+  <aside class="closed">
+    <input type="image" src="./assets/close-icon.svg" class="close-sidebar" alt="close sidebar icon">
+  </aside>
   <header class="header">
     <span>
       <p>Sign up and get 20% off to your first order. <u class="underline">Sign Up Now</u></p>
@@ -23,16 +40,7 @@
           SHOP.CO
         </h1>
       </div>
-      <ul class="nav-list">
-        <li>
-          Shop
-          <input type="image" src="./assets/arrow-down.svg" alt="Arrow Down Icon" />
-        </li>
-        <li>On Sale</li>
-        <li>New Arrivals</li>
-        <li>Brands</li>
-      </ul>
-      <input class="search-input" placeholder="Search for products..." />
+      <!-- <input class="search-input" placeholder="Search for products..." /> -->
       <section class="buttons-section">
         <input type="image" src="./assets/darker-search.svg" class="search-input-mobile" alt="search icon">
         <input type="image" src="./assets/cart-icon.svg" alt="Cart Icon" />
@@ -240,7 +248,7 @@
       </div>
     </section>
   </footer>
-  <script src="index.js"></script>
+  <script src="script.js"></script>
 </body>
 
 </html>
