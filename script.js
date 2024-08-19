@@ -8,8 +8,6 @@ document.addEventListener("DOMContentLoaded", function() {
         titleContainer.insertAdjacentElement("afterend", menuContent);
         const navList = document.querySelector(".nav-list");
         navList.insertAdjacentElement("afterend", searchInputContent);
-    } else {
-        searchInputContent.classList.toggle("hide");
     }
 });
 
@@ -30,21 +28,30 @@ closeSidebarButton.addEventListener("click", () => {
     asideElement.classList.toggle("closed");
 });
 
-// const searchMobile = document.querySelector(".search-input-mobile");
-// const navBar = document.querySelector(".nav-bar");
-// const mainElement = document.querySelector(".main");
+
+////////////
+
+const searchMobile = document.querySelector(".search-input-mobile");
+const navBar = document.querySelector(".nav-bar");
+const mainElement = document.querySelector(".main");
+let inputContainer;
     
-// searchMobile.addEventListener("click", () => {
-//     const header = document.getElementsByTagName("header")[0];
-//     if (header.lastElementChild.localName !== "input") {
-//         searchInputContent.classList.add("hide");
-//         navBar.insertAdjacentElement("afterend", searchInputContent);
-//         // mainElement.style.marginTop = "149px";
-//     } else {
-//         // mainElement.style.marginTop = "104px";
-//     }
-//     searchInputContent.classList.toggle("hide");
-// });
+searchMobile.addEventListener("click", () => {
+    const header = document.getElementsByTagName("header")[0];
+    if (header.lastElementChild.localName !== "div") {
+        inputContainer = document.createElement("div");
+        inputContainer.classList.add("input-container", "hide");
+        inputContainer.appendChild(searchInputContent);
+        navBar.insertAdjacentElement("afterend", inputContainer);
+        inputContainer.classList.toggle("hide");
+        inputContainer.classList.toggle("hide");
+    }
+    mainElement.classList.toggle("main-larger-margin");
+    inputContainer.classList.toggle("hide");
+});
+
+//////////////////////
+
 
 const styles = document.querySelectorAll(".styles-imgs > img");
 const arrivalCards = document.querySelectorAll(".arrival-card");

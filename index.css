@@ -127,6 +127,17 @@
     line-height: 24px;
   }
 
+  .input-container {
+    align-items: center;
+    background-color: black;
+    display: flex;
+    height: 60px;
+    justify-content: center;
+    overflow:hidden ;
+    transition: all 0.5s ease-in-out;
+    width: 100%;
+  }
+
   .search-input {
     background-color: var(--light-gray);
     background-image: url('./assets/search-icon.svg');
@@ -136,22 +147,32 @@
     display: inline-block;
     font-size: 16px;
     height: 45px;
-    margin-bottom: 0;
     padding-left: 45px;
-    transition: all 1s ease-in-out;
+    width: 80%;
 
     &:focus {
       outline: none;
     }
+
+    &::placeholder {
+      color: black;
+      font-family: Satoshi Regular , serif;
+      opacity: 40%;
+    }
   }
 
   .hide {
-    margin-bottom: -45px;
+    height: 0;
   }
 
   .main {
     margin-top: 104px;
+    transition: all 0.5s ease-in-out;
     width: 100%;
+  }
+
+  .main-larger-margin {
+    margin-top: 154px;
   }
 
   .models-section {
@@ -750,12 +771,6 @@
     display: none;
   }
 
-  .search-input .search-input::placeholder {
-    color: black;
-    font-family: Satoshi Regular , serif;
-    opacity: 40%;
-  }
-
   .buttons-section {
     display: flex;
     justify-content: space-between;
@@ -765,6 +780,7 @@
 
   .main {
     margin-top: 128px;
+    transition: none;
   }
 
   .models-section {
