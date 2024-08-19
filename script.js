@@ -28,9 +28,6 @@ closeSidebarButton.addEventListener("click", () => {
     asideElement.classList.toggle("closed");
 });
 
-
-////////////
-
 const searchMobile = document.querySelector(".search-input-mobile");
 const navBar = document.querySelector(".nav-bar");
 const mainElement = document.querySelector(".main");
@@ -49,9 +46,6 @@ searchMobile.addEventListener("click", () => {
     mainElement.classList.toggle("main-larger-margin");
     inputContainer.classList.toggle("hide");
 });
-
-//////////////////////
-
 
 const styles = document.querySelectorAll(".styles-imgs > img");
 const arrivalCards = document.querySelectorAll(".arrival-card");
