@@ -74,6 +74,16 @@
     width: 100%;
   }
 
+  .mark-container > p {
+    font-size: 12px;
+    opacity: 60%;
+  }
+
+  .arrival-card > p, .selling-card > p {
+    font-size: 16px;
+    margin-top: 5px;
+  }
+
   .header > span > p {
     font-family: Satoshi Regular , Times , serif;
     font-size: 12px;
@@ -243,9 +253,14 @@
     font-size: 24px;
   }
 
-  .mark-container > p {
-    font-size: 12px;
-    opacity: 60%;
+  main > hr {
+    background-color: black;
+    height: 1px;
+    margin: auto;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    opacity: 10%;
+    width: 90%;
   }
 
   .marks-section > hr {
@@ -259,11 +274,6 @@
 
   .second-mark-hr {
     display: none;
-  }
-
-  main > hr {
-    margin-bottom: 100px;
-    margin-top: 100px;
   }
 
   .models-img {
@@ -342,11 +352,6 @@
     width: 100%;
   }
 
-  .arrival-card > p, .selling-card > p {
-    font-size: 16px;
-    margin-top: 5px;
-  }
-
   .arrival-card h1, .selling-card h1 {
     display: inline;
     font-size: 20px;
@@ -386,15 +391,6 @@
     cursor: pointer;
   }
 
-  main > hr {
-    background-color: black;
-    height: 1px;
-    margin: auto;
-    margin-bottom: 30px;
-    margin-top: 30px;
-    opacity: 10%;
-    width: 90%;
-  }
 
   .dress-style-section {
     align-items: center;
@@ -897,15 +893,22 @@
 
   .dress-style-section img {
     margin: 10px;
+
+    &:hover {
+      cursor: pointer;
+    }
   }
 
   .reviews-container > img {
-    margin: 0 5px;
-  }
+    margin: 10px;
+    pointer-events: auto;
+    width: min-content;
 
-  .dress-style-section img:hover {
-    cursor: pointer;
-
+    &:hover {
+      background-color: var(--light-gray);
+      border: black 1px solid;
+      border-radius: 20px;
+    }
   }
 
   .groups-section > img:hover {
@@ -977,8 +980,7 @@
   }
 
   .styles-imgs {
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     justify-content: center;
   }
 
@@ -1032,16 +1034,12 @@
     margin-top: 50px;
     overflow-x: visible;
     width: fit-content;
+
+    &:hover {
+      animation-play-state: paused;
+    }
   }
 
-  .reviews-container:hover {
-    animation-play-state: paused;
-  }
-
-  .reviews-container > img {
-    margin: 10px;
-    width: min-content;
-  }
 
   @keyframes bannermove {
 
@@ -1052,12 +1050,6 @@
     100% {
       transform: translateX(-32%);
     }
-  }
-
-  .reviews-container > img:hover {
-    background-color: var(--light-gray);
-    border: black 1px solid;
-    border-radius: 20px;
   }
 
   .newsletter-section {
