@@ -1031,7 +1031,7 @@
     animation: bannermove 10s linear infinite alternate;
     display: flex;
     height: 240px;
-    margin-top: 50px;
+    margin-top: 25px;
     overflow-x: visible;
     width: fit-content;
 
@@ -1048,7 +1048,7 @@
     }
 
     100% {
-      transform: translateX(-32%);
+      transform: translateX(-38%);
     }
   }
 
