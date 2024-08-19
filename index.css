@@ -462,7 +462,7 @@
   }
 
   .reviews-button-right, .reviews-button-left {
-    margin-right: 2%;
+    margin-right: 6%;
     margin-top: 53px;
     position: absolute;
     right: 0;
@@ -470,7 +470,7 @@
   }
 
   .reviews-button-left {
-    margin-right: 10%;
+    margin-right: 13%;
   }
 
   .reviews-div {
